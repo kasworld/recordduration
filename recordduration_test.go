@@ -21,3 +21,8 @@ func TestNew(t *testing.T) {
 	defer t.Logf("run dur is %v", rd1)
 	time.Sleep(time.Second)
 }
+
+func TestCompact(t *testing.T) {
+	defer println("run dur is %v", New("recordtest"))
+	time.Sleep(time.Second)
+}
